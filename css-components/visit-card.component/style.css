@@ -1,0 +1,113 @@
+body{
+    background: #6da0fb;
+}
+
+.visit-card{
+    height: 320px;
+    display: flex;
+}
+
+/* #region LEFT CONTENT AREA */
+.visit-card .left-content{
+    background: white;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 32px;
+}
+
+.left-content .thumbnail img{
+    height: 130px;
+    border-radius: 100%;
+    margin: 8px;
+    border: 5px solid #f07033;
+}
+
+.left-content > .name-surname-job > .name-surname {
+    font-size: 22px;
+    color: #f07033;
+}
+
+.left-content > .name-surname-job > .job {
+    font-size: 14px;
+}
+
+hr.bar-left {
+border: 0;
+height: 2px;
+background: #f07033;
+margin-left: 64px;
+margin-right: 64px;
+}
+
+/* #endregion LEFT CONTET AREA */
+
+/* #region RIGHT CONTENT AREA */
+.visit-card > .right-content {
+    background: #f07033;
+    width: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.icon-info {
+    color: #f07033;
+    font-size: 24px;
+}
+
+.right-content td.td-icon {
+    background-color: white;
+    border: 4px solid #f07033;
+    align-items: center;
+    padding: 8px;
+    size: 24px;
+}
+
+.td-text {
+    font-size: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.td-endereco {
+    background-color: #f07033;
+}
+
+.text-endereco {
+    color: white;
+    text-size-adjust: 8px;
+}
+
+
+/* ANIMATIONS AND TRANSITIONS */
+
+.right-content:hover {
+    width: 240px;
+    transition: .5s;
+    padding-left: 50px;
+}
+
+.right-content:hover .icon-info{
+    font-size: 12px;
+    transition: .5s;
+}
+
+.right-content:hover .td-text {
+    background-color: white;
+    border: 4px solid #f07033;
+    font-size: 12px;
+    transition: .5s;
+}
+
+
+
+
